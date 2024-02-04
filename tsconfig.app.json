@@ -1,0 +1,17 @@
+{
+  
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue","src/**/*.js"],
+  "exclude": ["src/**/__tests__/*"],
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "allowJs":true,
+    "composite": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {//路径编辑
+      "@/*": ["./src/*"],
+      "~/*": ["./src/*"]
+    }
+  }
+}
